@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('ChatGPT Image Apr 2, 2025, 05_16_51 PM.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #000; /* Set text color to solid black */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #000; /* Make headings solid black */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Optional: Add a subtle shadow for better visibility */
+}
+
+#mods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    gap: 20px; /* Adds space between the mod cards */
+    margin: 20px;
+}
+
+.mod {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 45%; /* Adjusts the width to fit two mods per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #000; /* Ensure mod text is black */
+}
+
+.mod img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.mod a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.mod a:hover {
+    background: #1da851;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%; /* Full width of the mod container */
+    max-width: 300px; /* Limit the carousel width */
+    margin: 0 auto;
+    overflow: hidden; /* Ensures only one image is visible at a time */
+    border-radius: 5px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+    width: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0; /* Prevents images from shrinking */
+    border-radius: 5px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
